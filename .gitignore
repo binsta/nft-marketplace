@@ -42,3 +42,6 @@ typechain
 #Hardhat files
 cache
 artifacts
+
+#private key files
+p-key.txt
