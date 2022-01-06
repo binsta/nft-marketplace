@@ -5,7 +5,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "snyk test"
   },
   "dependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.3",
@@ -27,6 +28,7 @@
     "eslint": "8.6.0",
     "eslint-config-next": "12.0.7",
     "postcss": "^8.4.5",
+    "snyk": "^1.817.0",
     "tailwindcss": "^3.0.9"
   }
 }
