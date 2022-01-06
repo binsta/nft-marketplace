@@ -1,0 +1,17 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.22.1
+# ignores vulnerabilities until expiry date; change duration by modifying expiry date
+ignore:
+  SNYK-JS-ADMZIP-1065796:
+    - hardhat > adm-zip:
+        reason: None given
+        expires: '2022-02-04T14:33:13.953Z'
+  SNYK-JS-UNDERSCORE-1080984:
+    - ethereum-waffle > @ethereum-waffle/chai > @ethereum-waffle/provider > ganache-core > web3 > web3-core > web3-core-requestmanager > web3-providers-ws > underscore:
+        reason: None given
+        expires: '2022-02-04T14:33:13.953Z'
+  SNYK-JS-NODEFETCH-674311:
+    - ethereum-waffle > @ethereum-waffle/chai > @ethereum-waffle/provider > ganache-core > web3-provider-engine > eth-json-rpc-infura > eth-json-rpc-middleware > fetch-ponyfill > node-fetch:
+        reason: None given
+        expires: '2022-02-05T07:14:08.201Z'
+patch: {}
