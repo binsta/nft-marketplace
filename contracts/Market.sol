@@ -53,7 +53,7 @@ contract Market is ReentrancyGuard {
         return listingPrice;
     }
 
-    function mintMarketItem(
+    function makeMarketItem(
         address nftContract,
         uint256 tokenId,
         uint256 price
@@ -154,7 +154,7 @@ contract Market is ReentrancyGuard {
         return items;
     }
 
-    function fetchItemsCreated() public view returns (Markettoken[] memory) {
+    function fetchItemsCreated() public view returns (MarketToken[] memory) {
         uint256 totalItemCount = _tokenIds.current();
         uint256 itemCount = 0;
         uint256 currentIndex = 0;
