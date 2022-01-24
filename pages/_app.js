@@ -4,7 +4,7 @@ import Link from "next/link";
 function Marketplace({ Component, pageProps }) {
   return (
     <div>
-      <nav className='p-5 border-b' style={{ backgroundColor: "black" }}>
+      <nav className='p-2' style={{ backgroundColor: "black" }}>
         <p className='font-bold text-white first-letter:uppercase first-letter:text-4xl md:first-letter:text-8xl text-4x1 hover:text-[#66666e] cursor-pointer'>
           Marketplace
         </p>
