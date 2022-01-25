@@ -1,9 +1,10 @@
 {
   "name": "nft-markteplace",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
-    "build": "deploy:ropsten && next build",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "test": "snyk test",
