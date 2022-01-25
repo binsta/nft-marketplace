@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "devpoly:ropsten && next build",
+    "build": "deploy:ropsten && next build",
     "start": "next start",
     "lint": "next lint",
     "test": "snyk test",
