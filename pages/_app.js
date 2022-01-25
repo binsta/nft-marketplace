@@ -1,24 +1,31 @@
 import "../styles/globals.css";
-import "./app.css";
 import Link from "next/link";
 
 function Marketplace({ Component, pageProps }) {
   return (
     <div>
-      <nav className='border-b p-6' style={{ backgroundColor: "purple" }}>
-        <p className='text-4x1 font-bold text-white'>Marketplace</p>
-        <div className='flex mt-4 justify-center'>
+      <nav className='p-2' style={{ backgroundColor: "black" }}>
+        <p className='font-bold text-white first-letter:uppercase first-letter:text-4xl md:first-letter:text-8xl text-4x1 hover:text-[#66666e] cursor-pointer'>
+          Marketplace
+        </p>
+        <div className='flex justify-center mt-1'>
           <Link href='/'>
-            <a className='mr-4'>Main Marketplace</a>
+            <a className='mr-4 text-[#66666e] hover:text-[#e6e6e9]'>
+              Main Marketplace
+            </a>
           </Link>
           <Link href='/mint-item'>
-            <a className='mr-4'>Mint Tokens</a>
+            <a className='mr-4 text-[#66666e] hover:text-[#e6e6e9]'>
+              Mint Tokens
+            </a>
           </Link>
           <Link href='/my-nfts'>
-            <a className='mr-4'>My NFts</a>
+            <a className='mr-4 text-[#66666e] hover:text-[#e6e6e9]'>My NFts</a>
           </Link>
           <Link href='/account-dashboard'>
-            <a className='mr-4'>Account Dashboard</a>
+            <a className='mr-4 text-[#66666e] hover:text-[#e6e6e9]'>
+              Account Dashboard
+            </a>
           </Link>
         </div>
       </nav>
