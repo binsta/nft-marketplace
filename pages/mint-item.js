@@ -70,7 +70,7 @@ export default function MintItem() {
     let listingPrice = await contract.getListingPrice();
     listingPrice = listingPrice.toString();
 
-    transaction = await contract.maketMarketItem(nftaddress, tokenId, price, {
+    transaction = await contract.makeMarketItem(nftaddress, tokenId, price, {
       value: listingPrice,
     });
     await transaction.wait();
@@ -104,14 +104,17 @@ export default function MintItem() {
         />
         <input type='file' name='Asset' className='mt-4' onChange={onChange} />{" "}
         {fileUrl && (
-          <Image
-            className='mt-4 rounded'
-            width={50}
-            src={fileUrl}
-            alt='fileUrls'
-            height={50}
-            layout='responsive'
-          />
+          // eslint-disable-next-line @next/next/no-img-element
+          <div>
+            <Image
+              className='rounded mt-4'
+              width='350px'
+              height='250px'
+              src={fileUrl}
+              alt='nft'
+              layout='responsive'
+            />
+          </div>
         )}
         <button
           onClick={createMarket}

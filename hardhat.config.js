@@ -1,8 +1,7 @@
 require("@nomiclabs/hardhat-waffle");
-
-const projectId = process.env.infuraId;
+require("dotenv").config;
 const fs = require("fs");
-const { env } = require("process");
+const projectId = fs.readFileSync(".env").toString().trim() || "";
 const keyData = fs.readFileSync("./p-key.txt", {
   encoding: "utf8",
   flag: "r",
