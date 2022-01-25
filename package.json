@@ -1,12 +1,15 @@
 {
   "name": "nft-markteplace",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "snyk test"
+    "test": "snyk test",
+    "deploy:dev": "npx hardhat run scripts/deploy.js --network localhost",
+    "deploy:ropsten": "npx hardhat run scripts/deploy.js --network ropsten"
   },
   "dependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.3",
