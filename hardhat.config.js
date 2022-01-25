@@ -2,7 +2,7 @@ require("@nomiclabs/hardhat-waffle");
 require("dotenv").config;
 const fs = require("fs");
 const projectId = fs.readFileSync(".env").toString().trim() || "";
-const keyData = fs.readFileSync("./pkey.txt", {
+const keyData = fs.readFileSync(".pkey", {
   encoding: "utf8",
   flag: "r",
 });
